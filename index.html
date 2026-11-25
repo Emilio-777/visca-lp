@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="de" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Influencer-Playbook für deine Brand | VISCA Marketing</title>
+  <meta name="description" content="Das Influencer Playbook aus dem Aufbau bei SNOCKS, übertragen auf deine Brand. Anfrage stellen, Brand-Check buchen, individuelles Playbook erhalten.">
+  <meta name="theme-color" content="#060810">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/logos/visca-logo-white.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" as="image" href="assets/playbook/cover.jpg">
+  <script>document.documentElement.classList.replace('no-js','js')</script>
+  <script src="config.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#anfrage">Zum Formular springen</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="nav">
+      <a href="#top" class="nav-logo" aria-label="VISCA Marketing – nach oben">
+        <img src="assets/logos/visca-logo-white.png" alt="VISCA Marketing" width="110" height="30">
+      </a>
+      <a href="#anfrage" class="btn btn-primary btn-sm js-to-form">Playbook anfordern <span aria-hidden="true">→</span></a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <figure class="hero-media">
+          <button type="button" class="video-thumb js-video" data-video="FuXdrv25BDI" data-title="Jannik Taser &amp; Johannes Kliesch auf der E-Com Stage 2026" aria-label="Video abspielen: Jannik Taser und Johannes Kliesch auf der E-Com Stage 2026">
+            <img src="assets/video/stage.jpg" alt="" width="960" height="540" fetchpriority="high">
+            <span class="play" aria-hidden="true"></span>
+          </button>
+          <figcaption><strong>Jannik Taser &amp; Johannes Kliesch</strong> auf der E-Com Stage 2026</figcaption>
+        </figure>
+        <div class="hero-copy">
+          <span class="pill">Influencer-Performance-Playbook 2027</span>
+          <h1 class="h1">Hol dir das Influencer-Playbook von SNOCKS, <span class="text-gradient">übertragen auf deine Brand.</span></h1>
+          <p class="lead">Bei SNOCKS haben wir Influencer Marketing zum profitabelsten Neukundenkanal aufgebaut. Jetzt &uuml;bertragen wir dieses System auf deine Brand.</p>
+        </div>
+        <div class="hero-proof-wrap">
+          <ul class="hero-proof" aria-label="Zahlen"><li><strong>15.000+</strong><span>Creator-Buchungen</span></li><li><strong>35+</strong><span>Brands betreut</span></li><li><strong>22,5<small> Mio. &euro;</small></strong><span>Ad Spend verwaltet</span></li></ul>
+        </div>
+
+        <!-- Formular / Buchungsansicht -->
+        <div class="hero-form" id="anfrage" tabindex="-1">
+          <div class="form-card" id="form-card">
+            <div class="form-card-bar" aria-hidden="true"></div>
+
+            <p class="form-seal">F&uuml;r E-Com-Brands ab 5&nbsp;Mio.&nbsp;&euro; Jahresumsatz</p>
+            <ol class="steps" aria-label="Ablauf">
+              <li class="step-col"><span class="step-time">1 Minute</span><span class="step is-active" data-step="1"><span class="step-no">01</span> Anfrage</span></li>
+              <li class="step-arrow" aria-hidden="true">&rarr;</li>
+              <li class="step-col"><span class="step-time">15 Minuten</span><span class="step" data-step="2"><span class="step-no">02</span> Brand-Check</span></li>
+              <li class="step-arrow" aria-hidden="true">&rarr;</li>
+              <li class="step-col"><span class="step-time" aria-hidden="true">&nbsp;</span><span class="step" data-step="3"><span class="step-no">03</span> Playbook</span></li>
+            </ol>
+
+            <!-- Schritt 1: Anfrage -->
+            <div class="view view-form" id="view-form">
+              <h2 class="form-title">Fordere dein Playbook an</h2>
+              <p class="form-sub">Nach dem Absenden w&auml;hlst du direkt deinen Termin f&uuml;r den Brand-Check (15&nbsp;Min.). Du musst nichts vorbereiten.</p>
+
+              <form id="lead-form" novalidate>
+                <div class="field">
+                  <label for="f-name">Name</label>
+                  <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Vor- und Nachname" required aria-describedby="e-name">
+                  <p class="field-error" id="e-name" aria-live="polite"></p>
+                </div>
+                <div class="field">
+                  <label for="f-shop">Online-Shop URL</label>
+                  <input id="f-shop" name="shop" type="text" inputmode="url" autocomplete="url" autocapitalize="off" spellcheck="false" placeholder="deinebrand.de" required aria-describedby="e-shop">
+                  <p class="field-error" id="e-shop" aria-live="polite"></p>
+                </div>
+                <div class="field">
+                  <label for="f-email">Business E-Mail</label>
+                  <input id="f-email" name="email" type="email" autocomplete="email" autocapitalize="off" spellcheck="false" placeholder="name@deinebrand.de" required aria-describedby="e-email">
+                  <p class="field-error" id="e-email" aria-live="polite"></p>
+                </div>
+                <div class="field">
+                  <label for="f-budget">Influencer-Budget pro Monat</label>
+                  <div class="select-wrap">
+                    <select id="f-budget" name="budget" required aria-describedby="e-budget">
+                      <option value="" selected disabled>Bitte auswählen</option>
+                      <option>Noch keins</option>
+                      <option>Unter 5.000 €</option>
+                      <option>5.000 bis unter 10.000 €</option>
+                      <option>10.000 bis unter 25.000 €</option>
+                      <option>25.000 bis unter 50.000 €</option>
+                      <option>50.000 bis unter 100.000 €</option>
+                      <option>100.000 € oder mehr</option>
+                    </select>
+                  </div>
+                  <p class="field-error" id="e-budget" aria-live="polite"></p>
+                </div>
+                <div class="field field-planned" id="planned-wrap" hidden>
+                  <label for="f-planned">Mit welchem monatlichen Influencer-Budget m&ouml;chtest du starten?</label>
+                  <div class="select-wrap">
+                    <select id="f-planned" name="plannedBudget" aria-describedby="e-planned">
+                      <option value="" selected disabled>Bitte auswählen</option>
+                      <option>Unter 5.000 €</option>
+                      <option>5.000 bis unter 10.000 €</option>
+                      <option>10.000 bis unter 25.000 €</option>
+                      <option>25.000 bis unter 50.000 €</option>
+                      <option>50.000 bis unter 100.000 €</option>
+                      <option>100.000 € oder mehr</option>
+                    </select>
+                  </div>
+                  <p class="field-error" id="e-planned" aria-live="polite"></p>
+                </div>
+
+                <!-- Spamschutz (für Menschen unsichtbar) -->
+                <div class="hp" aria-hidden="true">
+                  <label for="f-company">Firma</label>
+                  <input id="f-company" name="company_hp" type="text" tabindex="-1" autocomplete="off">
+                </div>
+
+                <div class="form-alert" id="form-alert" role="alert" hidden></div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+                  <span class="btn-label">Weiter zum Brand-Check</span>
+                  <span class="spinner" aria-hidden="true"></span>
+                </button>
+                <p class="form-legal">Mit dem Absenden stimmst du zu, dass wir deine Angaben zur Bearbeitung deiner Anfrage nutzen. Mehr in der <a href="https://viscamarketing.com/rechtliches" target="_blank" rel="noopener" class="js-privacy">Datenschutzerklärung</a>.</p>
+              </form>
+            </div>
+
+            <!-- Schritt 2: Buchung -->
+            <div class="view view-booking" id="view-booking" hidden>
+              <div class="status-note" id="booking-status">
+                <span class="status-dot" aria-hidden="true"></span>
+                <p><strong>Anfrage eingegangen.</strong> Dein Brand-Check ist noch nicht gebucht. Wähle jetzt einen Termin.</p>
+              </div>
+              <p class="test-badge" id="test-badge" hidden>Testmodus: Es wurden keine Daten versendet (keine Formular-Anbindung konfiguriert).</p>
+              <h2 class="form-title" tabindex="-1" id="booking-title">Wähle deinen Brand-Check</h2>
+              <p class="form-sub">15 Minuten mit Jannik. Kein Verkaufsgespr&auml;ch, du musst nichts vorbereiten.</p>
+              <div class="call-block">
+                <p class="call-title">Im Brand-Check lernen wir kennen:</p>
+                <ul><li>deine Produkte und Zielgruppe</li><li>dein Budget und deine Ziele</li><li>deine bisherigen Erfahrungen</li></ul>
+                <p class="call-note">Daraus entsteht die Grundlage f&uuml;r dein individuelles Playbook.</p>
+              </div>
+              <div class="calendly-wrap" id="calendly-wrap">
+                <div class="calendly-loading" id="calendly-loading">Terminkalender wird geladen …</div>
+              </div>
+              <p class="fallback">Kalender lädt nicht? <a id="calendly-fallback" href="https://calendly.com/jannik-viscamarketing/30min" target="_blank" rel="noopener">Brand-Check direkt bei Calendly buchen ↗</a></p>
+            </div>
+
+            <!-- Schritt 3: Bestätigung (erst nach echter Buchung) -->
+            <div class="view view-done" id="view-done" hidden>
+              <div class="done-icon" aria-hidden="true">✓</div>
+              <h2 class="form-title" tabindex="-1" id="done-title">Dein Brand-Check ist gebucht.</h2>
+              <p class="form-sub">Die Terminbestätigung kommt per E-Mail von Calendly. Im Gespräch sammeln wir alles, was wir für dein individuelles Playbook brauchen.</p>
+            </div>
+          
+            <!-- Danke (nicht qualifiziert) -->
+            <div class="view view-thanks" id="view-thanks" hidden>
+              <p class="thanks-text" tabindex="-1" id="thanks-title"><strong>Danke f&uuml;r dein Interesse.</strong> Der Brand-Check und das Playbook lohnen sich f&uuml;r Brands, die mindestens 5.000&nbsp;&euro; pro Monat in Influencer Marketing investieren wollen. Aktuell passt das noch nicht ganz. Wenn sich dein Budget &auml;ndert, melde dich gern wieder.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BRANDS ============ -->
+    <section class="section brands" aria-labelledby="brands-title">
+      <div class="container">
+        <div class="section-head scroll-fade">
+          <p class="eyebrow">Trusted by</p>
+          <h2 class="h2" id="brands-title">Brands, die auf unsere <span class="text-gradient">Erfahrung</span> setzen</h2>
+        </div>
+        <ul class="logo-wall scroll-fade" id="logo-wall">
+          <li style="--s:1"><img src="assets/logos/web/snocks.png" alt="SNOCKS" loading="lazy"></li>
+          <li style="--s:1"><img src="assets/logos/web/gotbag-new.png" alt="GOT BAG" loading="lazy"></li>
+          <li style="--s:1"><img src="assets/logos/web/doonails-new.png" alt="DOONAILS" loading="lazy"></li>
+          <li style="--s:0.9"><img src="assets/logos/web/bauhaus-new.png?v=2" alt="BAUHAUS" loading="lazy"></li>
+          <li style="--s:1"><img src="assets/logos/web/immoscout24-new.png" alt="ImmoScout24" loading="lazy"></li>
+          <li style="--s:1"><img src="assets/logos/web/jochen-schweizer-new.png" alt="Jochen Schweizer" loading="lazy"></li>
+          <li style="--s:1"><img src="assets/logos/web/vetsak-new.png" alt="vetsak" loading="lazy"></li>
+          <li style="--s:1"><img src="assets/logos/web/purelei.png" alt="PURELEI" loading="lazy"></li>
+          <li style="--s:1"><img src="assets/logos/web/qs-new.png" alt="QS" loading="lazy"></li>
+          <li style="--s:1"><img src="assets/logos/web/zahnheld.png" alt="Zahnheld" loading="lazy"></li>
+          <li style="--s:1"><img src="assets/logos/web/feelslike-new.png" alt="feels.like" loading="lazy"></li>
+          <li style="--s:1"><img src="assets/logos/web/pferdegold-new.png" alt="Pferdegold" loading="lazy"></li>
+          <li style="--s:1"><img src="assets/logos/web/buah.png" alt="buah" loading="lazy"></li>
+          <li style="--s:1"><img src="assets/logos/web/terra-canis-new.png" alt="Terra Canis" loading="lazy"></li>
+          <li style="--s:1"><img src="assets/logos/web/girl-got-lashes.png" alt="Girl Got Lashes" loading="lazy"></li>
+          <li style="--s:1"><img src="assets/logos/web/hydraid-new.png" alt="Hydraid" loading="lazy"></li>
+          <li style="--s:1"><img src="assets/logos/gitti.svg" alt="gitti" loading="lazy"></li>
+          <li style="--s:1.3"><img src="assets/logos/holzkern.svg" alt="Holzkern" loading="lazy"></li>
+          <li style="--s:1"><img src="assets/logos/wildling.svg" alt="Wildling" loading="lazy"></li>
+          <li style="--s:1"><img src="assets/logos/web/neolymp.png" alt="Neolymp" loading="lazy"></li>
+          <li style="--s:1.15"><img src="assets/logos/web/daely.png" alt="DAELY" loading="lazy"></li>
+          <li style="--s:1"><img src="assets/logos/paperandtea.svg" alt="Paper &amp; Tea" loading="lazy"></li>
+          <li style="--s:1"><img src="assets/logos/web/apol.png" alt="apol" loading="lazy"></li>
+          <li style="--s:1"><img src="assets/logos/web/alpenwert.png" alt="ALPENWERT" loading="lazy"></li>
+            <li style="--s:1"><img src="assets/logos/livom.svg" alt="Livom" class="svg-logo" loading="lazy"></li>
+          <li style="--s:1"><img src="assets/logos/makani.svg" alt="Makani" class="svg-logo" loading="lazy"></li>
+          <li style="--s:1.1"><img src="assets/logos/web/distorted-people.png" alt="Distorted People" loading="lazy"></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PLAYBOOK ============ -->
+    <section class="section playbook" id="playbook" aria-labelledby="pb-title">
+      <div class="container">
+        <div class="section-head scroll-fade">
+          <p class="eyebrow">Das Playbook</p>
+          <h2 class="h2" id="pb-title">Was in deinem <span class="text-gradient">Playbook</span> steckt</h2>
+          <p class="sub">25 Seiten aus echten Buchungen und dem Aufbau bei SNOCKS. Die Rechnungen und Empfehlungen setzen wir mit den Werten aus deinem Brand-Check auf.</p>
+        </div>
+
+        <div class="pb-layout">
+          <div class="pb-cover scroll-fade">
+            <div class="cover-stack"><button type="button" class="cover-frame js-lightbox" data-src="assets/playbook/cover.jpg" data-caption="Cover des Influencer-Playbooks 2027" aria-label="Cover des Playbooks vergr&ouml;&szlig;ern"><img src="assets/playbook/cover-mockup.png" alt="Cover: Das Influencer-Playbook 2027, Wie du Influencer Marketing aufbaust, ohne die teuren Fehler" width="720" height="1019"></button></div>
+            <span class="free-badge">Kostenlos</span><p class="free-why">Weil wir Klarheit schaffen wollen, bevor du investierst</p>
+          </div>
+
+          <div class="pb-groups">
+            <div class="pb-group scroll-fade">
+              <p class="pb-group-label"><span class="dot dot-blue"></span>Zahlen &amp; Preise</p>
+              <div class="pb-cards">
+                <article class="pb-card">
+                  <span class="pb-pages">S. 5–8</span>
+                  <h3>TKP-Benchmarks &amp; Adjusted TKP</h3>
+                  <p>Richtwerte f&uuml;r DACH-Creator, gerechnet auf deine Zielgruppe.</p>
+                </article>
+                <article class="pb-card is-personal is-formula">
+                  <span class="pb-pages">S. 9</span>
+                  <h3>Dein Maximalpreis pro Creator</h3>
+                  <p>Der Preis pro Creator, ab dem eine Buchung nicht mehr profitabel ist.</p>
+                  <p class="formula" aria-label="Formel"><span class="f-res">Max. Preis</span><i>=</i><span>&Oslash; Link-Klicks</span><i>&times;</i><span>Conversion Rate</span><i>&times;</i><span>Warenkorb</span><i>&divide;</i><span>Ziel-ROAS</span></p>
+                  <span class="tag-personal">Für deine Brand berechnet</span>
+                </article>
+              </div>
+            </div>
+
+            <div class="pb-group scroll-fade">
+              <p class="pb-group-label"><span class="dot dot-violet"></span>Prüfen, Verhandeln, Aufbauen</p>
+              <div class="pb-cards">
+                <article class="pb-card">
+                  <span class="pb-pages">S. 10–12</span>
+                  <h3>Creator-Checks &amp; Red Flags</h3>
+                  <p>F&uuml;nf Checks vor der Buchung, Scouting-Filter und Red Flags.</p>
+                </article>
+                <article class="pb-card">
+                  <span class="pb-pages">S. 13–14</span>
+                  <h3>Verhandlung, Bundles &amp; Reminder</h3>
+                  <p>F&uuml;nf Preis-Hebel und warum die zweite Story oft mehr verkauft.</p>
+                </article>
+                <article class="pb-card is-personal">
+                  <span class="pb-pages">S. 15–16</span>
+                  <h3>Budget, Einstieg &amp; Formate</h3>
+                  <p>Budgetaufteilung, drei Fokusnischen und das passende Format.</p>
+                  <span class="tag-personal">Mit deinen Fokusnischen</span>
+                </article>
+                <article class="pb-card">
+                  <span class="pb-pages">S. 17–19</span>
+                  <h3>Briefing, Tracking &amp; Auswertung</h3>
+                  <p>Leitplanken statt Skript, Tracking-S&auml;ulen und ROAS-Ampel.</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="pb-group scroll-fade">
+              <p class="pb-group-label"><span class="dot dot-teal"></span>Ergebnisse &amp; neue Kanäle</p>
+              <div class="pb-cards">
+                <article class="pb-card is-highlight">
+                  <span class="pb-pages">S. 21</span>
+                  <h3>Partnership Ads</h3>
+                  <p>Creator-Content als Meta-Ad: Rechte kl&auml;ren, Gewinner skalieren.</p>
+                </article>
+                <article class="pb-card is-highlight">
+                  <span class="pb-pages">S. 22</span>
+                  <h3>TikTok Shop</h3>
+                  <p>Direkt im Video verkaufen: Samples, Volumen und GMV-Kampagnen.</p>
+                </article>
+                <article class="pb-card">
+                  <span class="pb-pages">S. 20</span>
+                  <h3>Realistischer ROAS je Nische</h3>
+                  <p>Was den ROAS treibt und welche Werte unsere Cases zeigen.</p>
+                </article>
+                <article class="pb-card is-personal">
+                  <span class="pb-pages">S. 23–25</span>
+                  <h3>Fehler, Zeitplan &amp; Empfehlung</h3>
+                  <p>Zwei Fehler bei SNOCKS, Zeitplan und unsere Empfehlung f&uuml;r dich.</p>
+                  <span class="tag-personal">Dein Zeitplan</span>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-cta scroll-fade">
+          <a href="#anfrage" class="btn btn-primary js-to-form">Playbook für meine Brand anfordern <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CASES ============ -->
+    <section class="section cases" id="cases" aria-labelledby="cases-title">
+      <div class="container">
+        <div class="section-head scroll-fade">
+          <p class="eyebrow">Case Studies</p>
+          <h2 class="h2" id="cases-title">Was wir f&uuml;r Brands wie deine <span class="text-gradient">aufgebaut haben</span></h2>
+        </div>
+
+        <div class="case-list">
+          <article class="case-card scroll-fade">
+            <div class="case-info">
+              <img class="case-logo" src="assets/logos/web/snocks.png" alt="SNOCKS" loading="lazy">
+              <h3 class="case-title">Von 5-stelligem Testbudget zum profitabelsten Paid Channel</h3>
+              <p class="case-period">Ergebnisse nach 12 Monaten</p>
+              <dl class="kpis">
+                <div class="kpi"><dt>Ad Spend monatlich</dt><dd>1&nbsp;Mio.&nbsp;€</dd></div>
+                <div class="kpi"><dt>Umsatz monatlich</dt><dd>&gt;&nbsp;2,5&nbsp;Mio.&nbsp;€</dd></div>
+                <div class="kpi"><dt>ROAS</dt><dd>2,5–3,5</dd></div>
+              </dl>
+            </div>
+            <button type="button" class="video-thumb js-video" data-video="MhEwfbNOs2g" data-title="Video Case Study: SNOCKS" aria-label="Video Case Study SNOCKS abspielen">
+              <img src="assets/video/case-snocks.jpg" alt="" loading="lazy" width="1280" height="720">
+              <span class="play" aria-hidden="true"></span>
+              <span class="video-label">Video Case Study</span>
+            </button>
+          </article>
+
+          <article class="case-card scroll-fade">
+            <div class="case-info">
+              <img class="case-logo" src="assets/logos/web/zahnheld.png" alt="Zahnheld" loading="lazy">
+              <h3 class="case-title">Von null zum zusätzlichen Performance-Kanal</h3>
+              <p class="case-period">Ergebnisse nach 6 Monaten</p>
+              <dl class="kpis">
+                <div class="kpi"><dt>Ad Spend</dt><dd>5-stellig</dd></div>
+                <div class="kpi"><dt>Umsatz</dt><dd>6-stellig</dd></div>
+                <div class="kpi"><dt>ROAS</dt><dd>2,5–3,5</dd></div>
+              </dl>
+            </div>
+            <button type="button" class="video-thumb js-video" data-video="mkt4xo1yGzY" data-title="Video Case Study: Zahnheld" aria-label="Video Case Study Zahnheld abspielen">
+              <img src="assets/video/case-zahnheld.jpg" alt="" loading="lazy" width="1280" height="720">
+              <span class="play" aria-hidden="true"></span>
+              <span class="video-label">Video Case Study</span>
+            </button>
+          </article>
+
+          <article class="case-card scroll-fade">
+            <div class="case-info">
+              <img class="case-logo" src="assets/logos/web/girl-got-lashes.png" alt="Girl Got Lashes" loading="lazy">
+              <h3 class="case-title">Weniger Kooperationen, deutlich mehr Umsatz</h3>
+              <p class="case-period">Über die Zusammenarbeit</p>
+              <dl class="kpis">
+                <div class="kpi"><dt>ROAS stabil</dt><dd>3–4</dd></div>
+                <div class="kpi"><dt>Umsatz</dt><dd>hoch 6-stellig</dd></div>
+              </dl>
+            </div>
+            <button type="button" class="video-thumb js-video" data-video="OQg0ey2nuZ8" data-title="Video Case Study: Girl Got Lashes" aria-label="Video Case Study Girl Got Lashes abspielen">
+              <img src="assets/video/case-girlgotlashes.jpg" alt="" loading="lazy" width="1280" height="720">
+              <span class="play" aria-hidden="true"></span>
+              <span class="video-label">Video Case Study</span>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS (ohne Überschrift) ============ -->
+    <section class="section testimonials" aria-label="Kundenstimmen">
+      <div class="container">
+        <div class="carousel" id="carousel" role="region" aria-roledescription="Karussell" aria-label="Kundenstimmen, mit Pfeiltasten wechseln">
+          <div class="carousel-track" id="carousel-track" tabindex="0">
+            <div class="t-slide" role="group" aria-roledescription="Folie">
+              <img class="t-brand" src="assets/logos/web/doonails-new.png" alt="DOONAILS" loading="lazy">
+              <figure class="t-card">
+              <figcaption class="t-head">
+                <img class="t-avatar" src="assets/fotos/testimonials/david-windegger.jpg" alt="David Windegger" width="48" height="48" loading="lazy">
+                <span class="t-who"><strong>David Windegger<svg class="t-check" viewBox="0 0 22 22" width="17" height="17" aria-hidden="true"><path fill="#1d9bf0" d="M20.4 11c0-1.3-.8-2.4-1.9-2.9.4-1.2.1-2.5-.8-3.4s-2.2-1.2-3.4-.8C13.8 2.8 12.7 2 11.4 2s-2.4.8-2.9 1.9c-1.2-.4-2.5-.1-3.4.8s-1.2 2.2-.8 3.4C3.2 8.6 2.4 9.700 2.4 11s.8 2.4 1.900 2.9c-.4 1.200-.1 2.500.8 3.400s2.200 1.200 3.400.8c.5 1.100 1.600 1.900 2.900 1.900s2.400-.8 2.900-1.900c1.200.4 2.500.1 3.400-.8s1.200-2.200.8-3.400c1.100-.5 1.900-1.600 1.900-2.900z"/><path fill="#fff" d="M9.900 14.700l-3-3 1.100-1.100 1.900 1.900 4.100-4.100 1.100 1.100z"/></svg></strong><span>Co-Founder, DOONAILS</span></span>
+              </figcaption>
+              <blockquote><p>„Jannik hat einfach richtig Ahnung bei dem was er macht und das merkt man bei jeder Sekunde. Während unserer Zusammenarbeit konnten wir unser Influencer Marketing mit allen Strukturen direkt im ersten Monat aufs nächste Level bringen - sofort wieder!“</p></blockquote>
+            </figure>
+            </div>
+            <div class="t-slide" role="group" aria-roledescription="Folie">
+              <img class="t-brand" src="assets/logos/web/esn.png" alt="ESN" loading="lazy">
+              <figure class="t-card">
+              <figcaption class="t-head">
+                <img class="t-avatar" src="assets/fotos/testimonials/luca-lange.jpg" alt="Luca Lange" width="48" height="48" loading="lazy">
+                <span class="t-who"><strong>Luca Lange<svg class="t-check" viewBox="0 0 22 22" width="17" height="17" aria-hidden="true"><path fill="#1d9bf0" d="M20.4 11c0-1.3-.8-2.4-1.9-2.9.4-1.2.1-2.5-.8-3.4s-2.2-1.2-3.4-.8C13.8 2.8 12.7 2 11.4 2s-2.4.8-2.9 1.9c-1.2-.4-2.5-.1-3.4.8s-1.2 2.2-.8 3.4C3.2 8.6 2.4 9.700 2.4 11s.8 2.4 1.900 2.9c-.4 1.200-.1 2.500.8 3.400s2.200 1.200 3.400.8c.5 1.100 1.600 1.900 2.900 1.900s2.400-.8 2.900-1.900c1.200.4 2.500.1 3.400-.8s1.200-2.200.8-3.400c1.100-.5 1.900-1.600 1.900-2.900z"/><path fill="#fff" d="M9.900 14.700l-3-3 1.100-1.100 1.900 1.900 4.100-4.100 1.100 1.100z"/></svg></strong><span>Influencer Marketing, ESN</span></span>
+              </figcaption>
+              <blockquote><p>„Agenturen &amp; Brands stehen sich meist gegenüber - selten kennt die Agentur die Welt der Brand. Jannik ist einer der wenigen Menschen im deutschsprachigen Raum, der auf Brand-Seite ecom Sales auf 8stellige Umsätze skaliert hat. Unsere strategische Zusammenarbeit ist immer eine 10 von 10!“</p></blockquote>
+            </figure>
+            </div>
+            <div class="t-slide" role="group" aria-roledescription="Folie">
+              <img class="t-brand" src="assets/logos/web/gotbag-new.png" alt="GOT BAG" loading="lazy">
+              <figure class="t-card">
+              <figcaption class="t-head">
+                <img class="t-avatar" src="assets/fotos/testimonials/matthias-boll.jpg" alt="Matthias Boll" width="48" height="48" loading="lazy">
+                <span class="t-who"><strong>Matthias Boll<svg class="t-check" viewBox="0 0 22 22" width="17" height="17" aria-hidden="true"><path fill="#1d9bf0" d="M20.4 11c0-1.3-.8-2.4-1.9-2.9.4-1.2.1-2.5-.8-3.4s-2.2-1.2-3.4-.8C13.8 2.8 12.7 2 11.4 2s-2.4.8-2.9 1.9c-1.2-.4-2.5-.1-3.4.8s-1.2 2.2-.8 3.4C3.2 8.6 2.4 9.700 2.4 11s.8 2.4 1.900 2.9c-.4 1.200-.1 2.500.8 3.400s2.200 1.200 3.400.8c.5 1.100 1.600 1.900 2.900 1.900s2.400-.8 2.900-1.900c1.200.4 2.500.1 3.400-.8s1.200-2.200.8-3.400c1.100-.5 1.900-1.600 1.900-2.900z"/><path fill="#fff" d="M9.900 14.700l-3-3 1.100-1.100 1.900 1.900 4.100-4.100 1.100 1.100z"/></svg></strong><span>Lead of Performance Marketing, GOT BAG</span></span>
+              </figcaption>
+              <blockquote><p>„Die Zusammenarbeit mit Jannik war sowohl fachlich als auch menschlich eine echte Bereicherung. Mit seiner professionellen, direkten und lösungsorientierten Art hat er maßgeblich dazu beigetragen, unsere Prozesse &amp; KPIs im Influencer Marketing spürbar zu verbessern.“</p></blockquote>
+            </figure>
+            </div>
+            <div class="t-slide" role="group" aria-roledescription="Folie">
+              <img class="t-brand" src="assets/logos/esprit.svg" alt="Esprit" loading="lazy">
+              <figure class="t-card">
+              <figcaption class="t-head">
+                <img class="t-avatar" src="assets/fotos/testimonials/arndt-brockmann.jpg" alt="Arndt Brockmann" width="48" height="48" loading="lazy">
+                <span class="t-who"><strong>Arndt Brockmann<svg class="t-check" viewBox="0 0 22 22" width="17" height="17" aria-hidden="true"><path fill="#1d9bf0" d="M20.4 11c0-1.3-.8-2.4-1.9-2.9.4-1.2.1-2.5-.8-3.4s-2.2-1.2-3.4-.8C13.8 2.8 12.7 2 11.4 2s-2.4.8-2.9 1.9c-1.2-.4-2.5-.1-3.4.8s-1.2 2.2-.8 3.4C3.2 8.6 2.4 9.700 2.4 11s.8 2.4 1.900 2.9c-.4 1.200-.1 2.500.8 3.400s2.200 1.200 3.400.8c.5 1.100 1.600 1.900 2.900 1.900s2.400-.8 2.900-1.900c1.200.4 2.500.1 3.400-.8s1.200-2.200.8-3.400c1.100-.5 1.900-1.600 1.900-2.900z"/><path fill="#fff" d="M9.900 14.700l-3-3 1.100-1.100 1.900 1.900 4.100-4.100 1.100 1.100z"/></svg></strong><span>Ex-Board of Management Esprit</span></span>
+              </figcaption>
+              <blockquote><p>&bdquo;Meist stehen sich Agenturen und Brands gegen&uuml;ber. Jannik geh&ouml;rt zu den wenigen im deutschsprachigen Raum, die auf Brand-Seite ecom Sales auf 8stellige Ums&auml;tze skaliert haben &ndash; und dieses Wissen jetzt als Agentur einbringen. Damit bekommt man deutlich mehr als eine &lsquo;simple&rsquo; Agenturleistung.&ldquo;</p></blockquote>
+            </figure>
+            </div>
+            <div class="t-slide" role="group" aria-roledescription="Folie">
+              <img class="t-brand" src="assets/logos/web/alpenwert.png" alt="ALPENWERT" loading="lazy">
+              <figure class="t-card">
+              <figcaption class="t-head">
+                <img class="t-avatar" src="assets/fotos/testimonials/ramiz-soskic.jpg" alt="Ramiz Soskic" width="48" height="48" loading="lazy">
+                <span class="t-who"><strong>Ramiz Soskic<svg class="t-check" viewBox="0 0 22 22" width="17" height="17" aria-hidden="true"><path fill="#1d9bf0" d="M20.4 11c0-1.3-.8-2.4-1.9-2.9.4-1.2.1-2.5-.8-3.4s-2.2-1.2-3.4-.8C13.8 2.8 12.7 2 11.4 2s-2.4.8-2.9 1.9c-1.2-.4-2.5-.1-3.4.8s-1.2 2.2-.8 3.4C3.2 8.6 2.4 9.700 2.4 11s.8 2.4 1.900 2.9c-.4 1.200-.1 2.500.8 3.400s2.200 1.200 3.400.8c.5 1.100 1.600 1.900 2.900 1.900s2.400-.8 2.900-1.900c1.200.4 2.500.1 3.400-.8s1.200-2.200.8-3.400c1.100-.5 1.900-1.600 1.900-2.900z"/><path fill="#fff" d="M9.900 14.700l-3-3 1.100-1.100 1.900 1.900 4.100-4.100 1.100 1.100z"/></svg></strong><span>Gründer, ALPENWERT</span></span>
+              </figcaption>
+              <blockquote><p>„VISCA hat uns strategisch super beraten, sodass wir hier die ersten erfolgreichen Influencer gebucht haben und nun eine Basis für eine Skalierung haben.“</p></blockquote>
+            </figure>
+            </div>
+            <div class="t-slide" role="group" aria-roledescription="Folie">
+              <img class="t-brand" src="assets/logos/web/feelslike-new.png" alt="feels.like" loading="lazy">
+              <figure class="t-card">
+              <figcaption class="t-head">
+                <img class="t-avatar" src="assets/fotos/testimonials/simon-zweigler.jpg" alt="Simon Zweigler" width="48" height="48" loading="lazy">
+                <span class="t-who"><strong>Simon Zweigler<svg class="t-check" viewBox="0 0 22 22" width="17" height="17" aria-hidden="true"><path fill="#1d9bf0" d="M20.4 11c0-1.3-.8-2.4-1.9-2.9.4-1.2.1-2.5-.8-3.4s-2.2-1.2-3.4-.8C13.8 2.8 12.7 2 11.4 2s-2.4.8-2.9 1.9c-1.2-.4-2.5-.1-3.4.8s-1.2 2.2-.8 3.4C3.2 8.6 2.4 9.700 2.4 11s.8 2.4 1.900 2.9c-.4 1.200-.1 2.500.8 3.400s2.200 1.200 3.400.8c.5 1.100 1.600 1.900 2.900 1.900s2.400-.8 2.900-1.900c1.200.4 2.500.1 3.400-.8s1.200-2.200.8-3.400c1.100-.5 1.900-1.600 1.900-2.900z"/><path fill="#fff" d="M9.900 14.700l-3-3 1.100-1.100 1.900 1.900 4.100-4.100 1.100 1.100z"/></svg></strong><span>Gründer, feels.like</span></span>
+              </figcaption>
+              <blockquote><p>„Man merkt sofort, dass hier Profis mit Erfahrung am Werk sind. VISCA kann ich nur empfehlen.“</p></blockquote>
+            </figure>
+            </div>
+            <div class="t-slide" role="group" aria-roledescription="Folie">
+              <img class="t-brand" src="assets/logos/web/ios-new.png" alt="IOS &amp; Maica" loading="lazy">
+              <figure class="t-card">
+              <figcaption class="t-head">
+                <img class="t-avatar" src="assets/fotos/testimonials/maximilian-hoepfner.jpg" alt="Maximilian Höpfner" width="48" height="48" loading="lazy">
+                <span class="t-who"><strong>Maximilian Höpfner<svg class="t-check" viewBox="0 0 22 22" width="17" height="17" aria-hidden="true"><path fill="#1d9bf0" d="M20.4 11c0-1.3-.8-2.4-1.9-2.9.4-1.2.1-2.5-.8-3.4s-2.2-1.2-3.4-.8C13.8 2.8 12.7 2 11.4 2s-2.4.8-2.9 1.9c-1.2-.4-2.5-.1-3.4.8s-1.2 2.2-.8 3.4C3.2 8.6 2.4 9.700 2.4 11s.8 2.4 1.900 2.9c-.4 1.200-.1 2.500.8 3.400s2.200 1.200 3.400.8c.5 1.100 1.600 1.900 2.900 1.900s2.400-.8 2.900-1.900c1.200.4 2.500.1 3.400-.8s1.200-2.200.8-3.400c1.100-.5 1.900-1.600 1.900-2.900z"/><path fill="#fff" d="M9.900 14.700l-3-3 1.100-1.100 1.900 1.900 4.100-4.100 1.100 1.100z"/></svg></strong><span>Founder, IOS &amp; Maica</span></span>
+              </figcaption>
+              <blockquote><p>„Jannik macht einen sehr zuverlässigen Job. Kommunikation 10/10, Erfahrung 10/10, Menschlich 12/10! Bester Mann!“</p></blockquote>
+            </figure>
+            </div>
+          </div>
+          <div class="carousel-controls">
+            <button type="button" class="c-btn" id="c-prev" aria-label="Vorherige Kundenstimme" aria-controls="carousel-track">←</button>
+            <div class="c-dots" id="c-dots" aria-hidden="true"></div>
+            <button type="button" class="c-btn" id="c-next" aria-label="Nächste Kundenstimme" aria-controls="carousel-track">→</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOUNDER ============ -->
+    <section class="section founders" id="team" aria-labelledby="team-title">
+      <div class="container">
+        <div class="section-head scroll-fade">
+          <p class="eyebrow">Die Gründer</p>
+          <h2 class="h2" id="team-title">Das Performance Team hinter <span class="text-gradient">VISCA Marketing</span></h2>
+        </div>
+
+        <div class="founder-grid">
+          <!-- Jannik -->
+          <article class="founder-card scroll-fade">
+            <div class="fc-topline" aria-hidden="true"></div>
+            <div class="fc-inner">
+              <div class="fc-head">
+                <div class="fc-photo-wrap">
+                  <div class="fc-photo"><img src="assets/fotos/jannik-720.jpg" alt="Jannik Taser" loading="lazy" width="720" height="720" style="--pos:50% 22%"></div>
+                </div>
+                <div>
+                  <h3 class="fc-name">Jannik Taser</h3>
+                  <p class="fc-role">Gründer &amp; Geschäftsführer</p>
+                  <p class="fc-org">VISCA Marketing</p>
+                </div>
+              </div>
+              <div class="fc-stats">
+                <div class="fc-stat" data-graph="0,3,5,7,9,10.4,11.6,13,14,15"><p class="v">10+</p><p class="l">Jahre E-Commerce</p></div>
+                <div class="fc-stat" data-graph="5,12,28,45,65,80,95,110,130,150"><p class="v">150 Mio. €</p><p class="l">Umsatz generiert</p></div>
+                <div class="fc-stat" data-graph="1.5,8,18,30,48,62,75"><p class="v">75 Mio. €</p><p class="l">Skalierung in 6 Jahren</p></div>
+              </div>
+              <p class="fc-desc">Skalierung von 1,5 Mio. € auf über 75 Mio. € in 6 Jahren. Aufbau von Influencer Marketing als profitabelsten Performance Kanal.</p>
+              <ul class="fc-career">
+                <li><span class="fc-dot"></span><p><b>Director of Sales</b> <span>@ SNOCKS</span></p></li>
+                <li><span class="fc-dot"></span><p><b>Gründer &amp; CEO</b> <span>@ VISCA Marketing</span></p></li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Johannes -->
+          <article class="founder-card scroll-fade">
+            <div class="fc-topline" aria-hidden="true"></div>
+            <div class="fc-inner">
+              <div class="fc-head">
+                <div class="fc-photo-wrap">
+                  <div class="fc-photo"><img src="assets/fotos/johannes-720.jpg" alt="Johannes Kliesch" loading="lazy" width="720" height="720" style="--pos:52% 18%"></div>
+                </div>
+                <div>
+                  <h3 class="fc-name">Johannes Kliesch</h3>
+                  <p class="fc-role">Co-Founder &amp; CEO</p>
+                  <p class="fc-org">SNOCKS Group</p>
+                </div>
+              </div>
+              <div class="fc-stats">
+                <div class="fc-stat" data-graph="3,10,25,42,58,72,85,93,100"><p class="v">100 Mio. €+</p><p class="l">Umsatz mit SNOCKS</p></div>
+                <div class="fc-stat" data-graph="5,15,35,60,95,140,185,220,250"><p class="v">250+</p><p class="l">Mitarbeiter-Team</p></div>
+                <div class="fc-stat" data-graph="1,1,2,2,3,3,4,4"><p class="v">4</p><p class="l">Brands aufgebaut</p></div>
+              </div>
+              <p class="fc-desc">Influencer Marketing als stärksten Wachstumskanal etabliert. Speaker, Podcast Host &amp; E-Commerce Vorbild.</p>
+              <ul class="fc-career">
+                <li class="fc-dhdl"><span class="fc-dot"></span><p>bekannt als Investor bei <b class="hl">H&ouml;hle der L&ouml;wen</b></p></li>
+                <li><span class="fc-dot"></span><p><b>Advisor bei VISCA Marketing</b></p></li>
+                <li><span class="fc-dot"></span><p><b>Co-Founder &amp; CEO</b> <span>@ SNOCKS Group</span><small>SNOCKS · Oceansapart · Femtis · Les Lunes</small></p></li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <div class="track scroll-fade">
+          <p class="track-text">Unser Team hat echten Track Record über Jahre hinweg aus den erfolgreichsten D2C Brands Deutschlands</p>
+          <ul class="track-logos" id="track-logos">
+            <li style="--s:1"><img src="assets/logos/web/esn.png" alt="ESN" loading="lazy"></li>
+            <li style="--s:1"><img src="assets/logos/web/snocks.png" alt="SNOCKS" loading="lazy"></li>
+            <li style="--s:1"><img src="assets/logos/more-nutrition-official-white.svg" alt="More" loading="lazy"></li>
+            <li style="--s:1"><img src="assets/logos/web/rosental-organics.png" alt="Rosental Organics" loading="lazy"></li>
+            <li style="--s:1"><img src="assets/logos/web/loewenanteil.png" alt="Löwenanteil" loading="lazy"></li>
+            <li style="--s:1"><img src="assets/logos/emma.svg" alt="Emma Matratzen" loading="lazy"></li>
+            <li style="--s:1"><img src="assets/logos/web/klosterkitchen.png" alt="Kloster Kitchen" loading="lazy"></li>
+          </ul>
+        </div>
+
+        <div class="talks scroll-fade">
+          <article class="talk">
+            <button type="button" class="video-thumb js-video" data-video="jYngJvqI83k" data-title="Podcast mit Johannes Kliesch" aria-label="Podcast mit Johannes Kliesch abspielen">
+              <img src="assets/video/podcast-johannes.jpg" alt="" loading="lazy" width="1280" height="720">
+              <span class="play" aria-hidden="true"></span>
+            </button>
+            <div class="talk-text">
+              <p class="talk-kicker">Podcast</p>
+              <h3>So verhandelst du einen 25.000&nbsp;€ Influencer-Deal</h3>
+              <p>Jannik &amp; Johannes im Johannes Kliesch Podcast über die Zahlen hinter großen Creator-Deals.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABSCHLUSS-CTA ============ -->
+    <section class="section final" aria-labelledby="final-title">
+      <div class="container">
+        <div class="final-card scroll-fade">
+          <div class="final-cover"><img src="assets/playbook/cover-mockup.png" alt="Cover des Influencer-Playbooks 2027" width="720" height="1019" loading="lazy"><span class="free-badge">Kostenlos</span><p class="free-why">Weil wir Klarheit schaffen wollen, bevor du investierst</p></div>
+          <div class="final-body">
+            <p class="eyebrow">Nächster Schritt</p>
+            <h2 class="h2 h2-sm" id="final-title">Hol dir jetzt dein <span class="text-gradient">Playbook f&uuml;r 2027</span></h2>
+            <ol class="final-steps">
+              <li><span>01</span><div><b>Anfrage</b><p>Vier Angaben, unter einer Minute.</p></div></li>
+              <li><span>02</span><div><b>Brand-Check</b><p>Termin direkt w&auml;hlen. Kein Verkaufsgespr&auml;ch, nichts vorzubereiten.</p></div></li>
+              <li><span>03</span><div><b>Playbook</b><p>Wir übertragen unsere Erfahrung auf deine Brand.</p></div></li>
+            </ol>
+            <a href="#anfrage" class="btn btn-primary js-to-form">Playbook anfordern <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <img src="assets/logos/visca-logo-white.png" alt="VISCA Marketing" width="96" height="26" loading="lazy">
+      <p class="footer-addr">Visca Marketing GmbH · Burgweg 109 · 67454 Haßloch</p>
+      <nav class="footer-links" aria-label="Rechtliches">
+        <a href="https://viscamarketing.com/impressum" target="_blank" rel="noopener">Impressum</a>
+        <a href="https://viscamarketing.com/rechtliches" target="_blank" rel="noopener">Datenschutz</a>
+        <a href="https://viscamarketing.com/agb" target="_blank" rel="noopener">AGB</a>
+      </nav>
+      <p class="footer-copy">© 2026 Visca Marketing GmbH</p>
+    </div>
+  </footer>
+
+  <!-- Mobile Sticky-CTA -->
+  <div class="sticky-cta" id="sticky-cta" aria-hidden="true">
+    <a href="#anfrage" class="btn btn-primary btn-block js-to-form" tabindex="-1">Playbook anfordern <span aria-hidden="true">→</span></a>
+  </div>
+
+  <!-- Video-Modal -->
+  <dialog class="modal" id="video-modal" aria-labelledby="video-modal-title">
+    <div class="modal-inner">
+      <div class="modal-head">
+        <p id="video-modal-title" class="modal-title"></p>
+        <button type="button" class="modal-close" data-close aria-label="Video schließen">✕</button>
+      </div>
+      <div class="video-frame" id="video-frame"></div>
+    </div>
+  </dialog>
+
+  <!-- Bild-Lightbox -->
+  <dialog class="modal modal-image" id="image-modal" aria-label="Playbook-Seite">
+    <div class="modal-inner">
+      <div class="modal-head">
+        <p class="modal-title" id="image-modal-caption"></p>
+        <button type="button" class="modal-close" data-close aria-label="Schließen">✕</button>
+      </div>
+      <div class="image-frame"><img id="image-modal-img" alt=""></div>
+    </div>
+  </dialog>
+</body>
+</html>

@@ -1,0 +1,13 @@
+[build]
+  publish = "."
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/lead"
+  to = "/.netlify/functions/lead"
+  status = 200
+
+[[redirects]]
+  from = "/api/booked"
+  to = "/.netlify/functions/booked"
+  status = 200
