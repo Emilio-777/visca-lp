@@ -63,14 +63,21 @@
   /* ---------- Sticky-CTA (mobil) ---------- */
   var sticky = $('#sticky-cta'), hero = $('#hero'), footer = $('.site-footer');
   if ('IntersectionObserver' in window && sticky) {
-    var heroVisible = true, footerVisible = false;
+    // Erscheint erst, wenn der Brands-Abschnitt ins Bild kommt (nicht davor)
+    var brandsSec = $('.brands'), brandsReached = false, footerVisible = false;
     var upd = function () {
-      var show = !heroVisible && !footerVisible && !hero.classList.contains('is-booking') && !hero.classList.contains('is-done') && !hero.classList.contains('is-thanks');
+      var show = brandsReached && !footerVisible && !hero.classList.contains('is-booking') && !hero.classList.contains('is-done') && !hero.classList.contains('is-thanks');
       sticky.classList.toggle('is-visible', show);
       sticky.setAttribute('aria-hidden', show ? 'false' : 'true');
       $('a', sticky).tabIndex = show ? 0 : -1;
     };
-    new IntersectionObserver(function (e) { heroVisible = e[0].isIntersecting; upd(); }, { threshold: 0.05 }).observe(heroForm);
+    var onScrollSticky = function () {
+      var reached = brandsSec.getBoundingClientRect().top <= window.innerHeight;
+      if (reached !== brandsReached) { brandsReached = reached; upd(); }
+    };
+    window.addEventListener('scroll', onScrollSticky, { passive: true });
+    window.addEventListener('resize', onScrollSticky);
+    onScrollSticky();
     new IntersectionObserver(function (e) { footerVisible = e[0].isIntersecting; upd(); }).observe(footer);
   }
 
